@@ -2,7 +2,7 @@
 
 namespace Shared.Protocol.Requests
 {
-    public class VerseCreateRequest : IRequest<VerseCreateResponse>
+    public class VerseUpdateRequest : IRequest<VerseUpdateResponse>
     {
         public string Name { get; set; }
         public string Logo { get; set; }
@@ -10,8 +10,7 @@ namespace Shared.Protocol.Requests
         public DateTime End { get; set; }
     }
 
-    public class VerseCreateResponse
+    public class VerseUpdateResponse
     {
-        public string VerseId { get; set; }
     }
 }

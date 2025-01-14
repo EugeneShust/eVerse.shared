@@ -9,7 +9,7 @@ namespace Shared.Protocol.Requests
 
     public class UserVersesResponse 
     {
-        public List<VerseDto> Verses { get; set; }
-        public List<VerseDto> Favorites { get; set; }
+        public List<VersePreviewDto> Verses { get; set; }
+        public List<VersePreviewDto> Favorites { get; set; }
     }
 }
