@@ -1,5 +1,6 @@
 ﻿using Shared.Protocol.Api;
 using Shared.Protocol.Dtos;
+using System.Text.Json.Serialization;
 
 namespace Shared.Protocol.Requests
 {
@@ -9,6 +10,7 @@ namespace Shared.Protocol.Requests
 
     public class AppExploreResponse
     {
+        [JsonPropertyName("apps")]
         public List<AppPreviewDto> Apps { get; set; }
     }
 }
